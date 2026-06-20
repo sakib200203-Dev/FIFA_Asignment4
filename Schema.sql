@@ -24,9 +24,9 @@ CREATE TABLE Bookings (
     user_id int NOT NULL,
     match_id int NOT NULL,
 
-    seat_number VARCHAR(10) NOT NULL,
+    seat_number VARCHAR(10) ,
 
-    payment_status VARCHAR(20) NOT NULL
+    payment_status VARCHAR(20) 
         CHECK (payment_status IN (
             'Pending',
             'Confirmed',
